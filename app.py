@@ -60,18 +60,18 @@ def send_help(message):
 
 @bot.message_handler(commands=["info"])
 def send_info(message):
-    bot.send_message(message.chat.id, "Мой создатель - @por0vos1k. Он гениальный программист и хакер, ведь уже в 5 лет взломал пентагон!")
+    bot.send_message(message.chat.id, "Shop by RatHouse")
 
 
 @bot.message_handler(commands=["contact"])
 def send_contact(message):
-    bot.send_message(message.chat.id, "📎Контакты:\n\n◼️ Если что-то случилось - @por0vos1k\n◼️ Наши другие проекты - @kykl0vod\n\nУслуги гаранта(5%) - @Kukol6 ✔️")
+    bot.send_message(message.chat.id, "📎Контакты:\n\n◼️ Наши проекты - @kykl0vod\n\nУслуги гаранта(5%) - @Kukol6 ✔️")
 
 
 
 @bot.message_handler(commands=["liu4eg7hok"])
 def send_deepweb(message):
-    bot.send_message(message.chat.id, "Бот создан разработчиком Berlin. Его ник в телеграмм - @por0vos1k")
+    bot.send_message(message.chat.id, "Бот создан разработчиком Berlin.")
 
 
 
@@ -246,7 +246,7 @@ def send_otziv(message):
         bot.send_message(message.chat.id, "❗️Наш новостной канал - https://t.me/joinchat/AAAAAFj0WHiR5Eq-5KHWTg", reply_markup=keyboard)
     elif message.text == '💼 Контакты':
         print('Нажал Контакты. ID: '+str(message.chat.id)+'    Дата/время: '+str(datetime.now()))
-        bot.send_message(message.chat.id, "📎Контакты:\n\n◼️ Если что-то случилось - @por0vos1k\n◼️ Наши другие проекты - @kykl0vod\n\nУслуги гаранта(5%) - @Kukol6 ✔️")
+        bot.send_message(message.chat.id, "📎Контакты:\n\n◼️ Наши проекты - @kykl0vod\n\nУслуги гаранта(5%) - @Kukol6 ✔️")
     elif message.text == 'Работа с RatHouse':
         print('Нажал Работа. ID: '+str(message.chat.id)+'    Дата/время: '+str(datetime.now()))
         bot.send_message(message.chat.id, "На данный момент работы нет...")
@@ -285,7 +285,7 @@ def send_otziv(message):
             bot.send_message(message.chat.id, "❌ В доступе отказано!")
     elif message.text == '😈Админы':
         if message.chat.id == config.admin_id:
-            bot.send_message(config.admin_id, '🧊Список Админов: 🧊\n\n@por0vos1k', reply_markup=mine.nice)
+            bot.send_message(config.admin_id, '🧊Список Админов: 🧊\n\n@admin', reply_markup=mine.nice)
         else:
             bot.send_message(message.chat.id, "❌ В доступе отказано!")
     elif message.text == '🛒 Добавить товар':
