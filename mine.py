@@ -21,9 +21,8 @@ admibro.row('💌 Отзывы', '🏛 Новости')
 
 
 abc = telebot.types.ReplyKeyboardMarkup(True, False)
-abc.row('💰Баланс', '📈Статистика')
-abc.row('😈Админы', '🛒 Добавить товар')
-abc.row('📩 Рассылка', '🦋Стикеры')
+abc.row('💰Баланс', '📩 Рассылка')
+abc.row('😈Админы', '🦋Стикеры')
 abc.add('⬅️ Назад')
 
 
