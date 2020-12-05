@@ -268,11 +268,6 @@ def send_otziv(message):
             bot.send_message(config.admin_id, "🥝 Баланс вашего Киви: *"+str(balance)+"* руб", parse_mode='Markdown')
         else:
             bot.send_message(message.chat.id, "❌ В доступе отказано!")
-    elif message.text == '📈Статистика':
-        if message.chat.id == config.admin_id:
-            bot.send_message(config.admin_id, "🔨Этот раздел еще в разработке")
-        else:
-            bot.send_message(message.chat.id, "❌ В доступе отказано!")
     elif message.text == '🦋Стикеры':
         if message.chat.id == config.admin_id:
             bot.send_sticker(config.admin_id, config.logo_stick)
@@ -286,11 +281,6 @@ def send_otziv(message):
     elif message.text == '😈Админы':
         if message.chat.id == config.admin_id:
             bot.send_message(config.admin_id, '🧊Список Админов: 🧊\n\n@admin', reply_markup=mine.nice)
-        else:
-            bot.send_message(message.chat.id, "❌ В доступе отказано!")
-    elif message.text == '🛒 Добавить товар':
-        if message.chat.id == config.admin_id:
-            bot.send_message(config.admin_id, '🔨Этот раздел еще в разработке')
         else:
             bot.send_message(message.chat.id, "❌ В доступе отказано!")
     elif message.text == '📩 Рассылка':
