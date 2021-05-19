@@ -1,11 +1,10 @@
-name = "RatHouse | SHOP"
+name = "text"
 token = "text"
 admin_id = 123456789
-channel = "@text"
-op = "@text"
+channel = "text"
+op = "text"
 token_qiwi = 'text'
-qiwi = 'number_phone'
-bitcoin = "123123123"
+qiwi = 'text'
+bitcoin = "text"
 logo_stick = "text"
 secret_code = "text"
-buyer1 = 123456789
