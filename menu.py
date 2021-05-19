@@ -6,7 +6,6 @@ import telebot
 from telebot import types
 
 
-
 start = telebot.types.ReplyKeyboardMarkup(True, False)
 start.row('🗂 Каталог товаров', '👤 Мой кабинет')
 start.add('Работа с RatHouse')
