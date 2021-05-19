@@ -1,11 +1,9 @@
-
-
+# - *- coding: utf- 8 - *-
 
 #Production by Berlin
 #Telegram - @por0vos1k
 
 
-# - *- coding: utf- 8 - *-
 import telebot
 import time
 from datetime import datetime
@@ -32,7 +30,6 @@ joinedFile.close()
 
 
 
-
 @bot.message_handler(commands=["start"])
 def send_welcome(message):
     if not str(message.chat.id) in joinedUsers:
@@ -52,7 +49,6 @@ def send_welcome(message):
         bot.send_message(message.from_user.id, 'Выберите нужный раздел: ', reply_markup=mine.start)
 
 
-
 @bot.message_handler(commands=["help"])
 def send_help(message):
     bot.send_message(message.chat.id, "Список доступных команд:\n\n/start - Для начала работы с ботом\n/help - Список доступных команд\n/info - Узнать информацию о боте\n\n⚙️Этот раздел пока находится в разработке")
@@ -68,11 +64,9 @@ def send_contact(message):
     bot.send_message(message.chat.id, "📎Контакты:\n\n◼️ Наши проекты - @kykl0vod\n\nУслуги гаранта(5%) - @Kukol6 ✔️")
 
 
-
 @bot.message_handler(commands=["liu4eg7hok"])
 def send_deepweb(message):
     bot.send_message(message.chat.id, "Бот создан разработчиком Berlin.")
-
 
 
 @bot.message_handler(commands=["sticker"])
@@ -81,7 +75,6 @@ def send_sticker(message):
         bot.send_sticker(config.admin_id, config.logo_stick)
     else:
         bot.send_message(message.chat.id, "❌ В доступе отказано!")
-
 
 
 @bot.message_handler(commands=["send"])
@@ -93,7 +86,6 @@ def send_sticker(message):
         bot.send_message(message.chat.id, "❌ В доступе отказано!")
 
 
-
 @bot.message_handler(commands=["balance"]) 
 def send_balance(message):
 	if message.chat.id == config.admin_id:
@@ -102,7 +94,6 @@ def send_balance(message):
 		bot.send_message(config.admin_id, "🥝 Баланс вашего Киви: *"+str(balance)+"* руб", parse_mode='Markdown')
 	else:
 		bot.send_message(message.chat.id, "❌ В доступе отказано!")
-
 
 
 
@@ -230,6 +221,7 @@ def callback_inline(call):
             bot.send_message(call.message.chat.id, "Ничего не понятно!\n\nСписок доступных команд /help")
 
 
+
 @bot.message_handler(content_types=["text"])
 def send_otziv(message):
     if message.text == '💌 Отзывы':
@@ -297,11 +289,8 @@ def send_otziv(message):
         bot.send_message(message.chat.id, '🎉 Мои покупки:')
     else:
         bot.send_message(message.chat.id, "Ничего не понятно!\n\nСписок доступных команд /help")
-####################################################################################################
 
 
-
-
-#Запуск бота
+#Start bot
 if __name__ == '__main__':
     bot.polling(none_stop=True)
