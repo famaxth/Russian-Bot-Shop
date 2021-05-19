@@ -1,3 +1,7 @@
+#Production by Berlin
+#Telegram - @por0vos1k
+
+
 import telebot
 from telebot import types
 
