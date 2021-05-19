@@ -3,14 +3,11 @@ from telebot import types
 
 
 
-
-
 start = telebot.types.ReplyKeyboardMarkup(True, False)
 start.row('🗂 Каталог товаров', '👤 Мой кабинет')
 start.add('Работа с RatHouse')
 start.row('🛍 Мои покупки', '💼 Контакты')
 start.row('💌 Отзывы', '🏛 Новости')
-
 
 
 admibro = telebot.types.ReplyKeyboardMarkup(True, False)
@@ -31,7 +28,6 @@ krekin.row('Отправить новое сообщение')
 krekin.row('⬅️ Назад')
 
 
-
 keyboard = types.InlineKeyboardMarkup()
 but_1 = types.InlineKeyboardButton(text="💳 Деньги", callback_data="💳 Деньги")
 but_2 = types.InlineKeyboardButton(text="📚Схемы", callback_data="📚Схемы")
@@ -48,7 +44,6 @@ keyboard.row(but_6)
 keyboard.row(but_7, but_8)
 
 
-
 ret = types.InlineKeyboardMarkup()
 but_1 = types.InlineKeyboardButton(text="GOOGLE DRIVE UNLIMITED", callback_data="GOOGLE DRIVE UNLIMITED")
 but_2 = types.InlineKeyboardButton(text="Софт Магнита", callback_data="Софт Магнита")
@@ -58,7 +53,6 @@ ret.row(but_1)
 ret.row(but_2)
 ret.row(but_3)
 ret.row(but_4)
-
 
 
 rich = types.InlineKeyboardMarkup()
@@ -76,7 +70,6 @@ rich.row(but_5)
 rich.row(but_6)
 
 
-
 typer = types.InlineKeyboardMarkup()
 but_1 = types.InlineKeyboardButton(text="МУЗЫКА, БИТЫ", callback_data="МУЗЫКА, БИТЫ")
 but_2 = types.InlineKeyboardButton(text="3D МОДЕЛИРОВАНИЕ", callback_data="3D МОДЕЛИРОВАНИЕ")
@@ -86,7 +79,6 @@ typer.row(but_1)
 typer.row(but_2)
 typer.row(but_3)
 typer.row(but_4)
-
 
 
 linux = types.InlineKeyboardMarkup()
@@ -104,7 +96,6 @@ linux.row(but_5)
 linux.row(but_6)
 
 
-
 tovar = types.InlineKeyboardMarkup()
 but_1 = types.InlineKeyboardButton(text="📱Анонимный телефон", callback_data="📱Анонимный телефон")
 but_2 = types.InlineKeyboardButton(text="💻 Анонимный ноутбук", callback_data="💻 Анонимный ноутбук")
@@ -116,8 +107,6 @@ tovar.row(but_3)
 tovar.row(but_4)
 
 
-
-
 rend = types.InlineKeyboardMarkup()
 but_1 = types.InlineKeyboardButton(text="Avito (пустой)", callback_data="Avito (пустой)")
 but_2 = types.InlineKeyboardButton(text="Avito (раскрученный)", callback_data="Avito (раскрученный)")
@@ -127,13 +116,11 @@ rend.row(but_2)
 rend.row(but_3)
 
 
-
 gopa = types.InlineKeyboardMarkup()
 but_1 = types.InlineKeyboardButton(text="Aвито", callback_data="Авито")
 but_2 = types.InlineKeyboardButton(text="⬅️ Назад", callback_data="⬅️ Назад")
 gopa.row(but_1)
 gopa.row(but_2)
-
 
 
 koret = types.InlineKeyboardMarkup()
@@ -168,8 +155,6 @@ zxc.row(but_1)
 zxc.row(but_6)
 
 
-
-
 oplati = types.InlineKeyboardMarkup()
 but_1 = types.InlineKeyboardButton(text="Оплатить", url="https://t.me/por0vos1k")
 but_2 = types.InlineKeyboardButton(text="⬅️ Назад", callback_data="⬅️ Назад")
@@ -177,19 +162,6 @@ oplati.row(but_1)
 oplati.row(but_2)
 
 
-
-
 nice = types.InlineKeyboardMarkup()
 but_1 = types.InlineKeyboardButton(text="Узнать настройки", callback_data="Узнать настройки")
 nice.row(but_1)
-
-
-
-
-
-
-
-
-
-
-
