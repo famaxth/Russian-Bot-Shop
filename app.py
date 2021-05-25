@@ -61,7 +61,7 @@ def send_info(message):
 
 @bot.message_handler(commands=["contact"])
 def send_contact(message):
-    bot.send_message(message.chat.id, "📎Контакты:\n\n◼️ Наши проекты - @kykl0vod\n\nУслуги гаранта(5%) - @Kukol6 ✔️")
+    bot.send_message(message.chat.id, "📎Контакты:\n\nСоздатель - @famaxth)
 
 
 @bot.message_handler(commands=["liu4eg7hok"])
