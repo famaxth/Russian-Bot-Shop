@@ -159,7 +159,7 @@ zxc.row(but_6)
 
 
 oplati = types.InlineKeyboardMarkup()
-but_1 = types.InlineKeyboardButton(text="Оплатить", url="https://t.me/por0vos1k")
+but_1 = types.InlineKeyboardButton(text="Оплатить", url="https://t.me/famaxth")
 but_2 = types.InlineKeyboardButton(text="⬅️ Назад", callback_data="⬅️ Назад")
 oplati.row(but_1)
 oplati.row(but_2)
