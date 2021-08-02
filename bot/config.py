@@ -1,0 +1,11 @@
+name = "text"  # Имя магазина
+token = "text"  # Токен бота
+admin_id = 777777777  # ID администратора
+channel = "@text"  # Адрес канала с новостями
+op = "@text"  # Юзернейм оператора
+token_qiwi = "text"
+qiwi = "number"  # Номер Qiwi кошелька
+bitcoin = "text"  # Адрес биткоин
+logo_stick = "text"  # Код стикера
+secret_code = "text"  # Секретный код
+buyer1 = 777777777
