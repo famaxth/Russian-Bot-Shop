@@ -1,4 +1,4 @@
-# Russian Online Store (Telegram Bot)
+<h1 align="center">Russian Online Store (Telegram Bot)</h1>
 The bot was created specifically for the RatHouse store in Telegram. You can use it to add various catalogs and store products. All products and catalogs must be added manually. At the moment, the bot has a large number of features and functions.
 
 As of 2021/05/25, the project is no longer supported. In the future, I also do not plan to develop the project and somehow improve it.
